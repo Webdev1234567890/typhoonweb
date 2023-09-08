@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TYPHOON</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./css//style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="large-screen-menu overflow-hidden">
+    <header class="nav-container">
+      <section class="navbar-wrapper">
+        <div class="navbar-list-wrapper">
+          <a href="#!" class="logo" 
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="41"
+                height="42"
+                viewBox="0 0 41 42"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_12_231)">
+                  <path
+                    d="M35.7599 8.38097L29.7808 10.6861C31.5647 12.0918 33.0613 13.8747 34.1034 15.9697C37.7071 23.215 34.5084 31.4499 26.9589 34.363C21.3897 36.512 14.106 36.4266 5.10755 34.1075L11.0866 31.8024C9.3028 30.3967 7.80609 28.6138 6.76409 26.5186C3.16035 19.2733 6.31435 11.0557 13.9086 8.1254C19.4778 5.97653 26.7615 6.06172 35.7599 8.38097ZM22.9 14.8949C18.955 13.3625 14.6528 14.963 13.2907 18.4696C11.9286 21.9762 14.0224 26.0612 17.9674 27.5936C21.9125 29.126 26.2147 27.5254 27.5768 24.0188C28.9389 20.5122 26.8451 16.4272 22.9 14.8949Z"
+                    fill="url(#paint0_linear_12_231)"
+                  />
+                  <path
+                    d="M29.6807 21.1439C29.6807 26.3178 25.4864 30.5121 20.3125 30.5121C15.1385 30.5121 10.9442 26.3178 10.9442 21.1439C10.9442 15.9699 15.1385 11.7756 20.3125 11.7756C25.4864 11.7756 29.6807 15.9699 29.6807 21.1439ZM16.0206 21.1439C16.0206 23.5142 17.9421 25.4357 20.3125 25.4357C22.6828 25.4357 24.6043 23.5142 24.6043 21.1439C24.6043 18.7736 22.6828 16.852 20.3125 16.852C17.9421 16.852 16.0206 18.7736 16.0206 21.1439Z"
+                    fill="#232323"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_12_231"
+                    x1="11.3907"
+                    y1="-1.08484"
+                    x2="40.1783"
+                    y2="35.3871"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#007D5C" />
+                    <stop offset="1" stop-color="#00CE98" />
+                  </linearGradient>
+                  <clipPath id="clip0_12_231">
+                    <rect
+                      width="40.8693"
+                      height="40.8693"
+                      fill="white"
+                      transform="translate(0 0.806885)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="logo-title">Typh<span>oo</span>n</span>
+          </a>
+          <nav class="shift"
+          data-aos="zoom-in"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <ul class="nav-list">
+              <li>
+                <a href="#working">How It Works</a>
+              </li>
+              <li>
+                <a href="#offerings">What We Offer</a>
+              </li>
+              <li>
+                <a href="#tokenomics">Tokenomics</a>
+              </li>
+              <li>
+                <a href="#roadmap">Roadmap</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <div class="nav-button"
+          data-aos="fade-left"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          ><button class="btn-l-r btn uppercase">Connect Wallet</button></div>
+        </div>
+      </section>
+    </header>
+    </div>
+    <div class="small-screen-menu overflow-hidden">
+        <div class="wrapper">
+            <div class="mobile-logo-wrapper">
+            <span><img src="./images/logo.png" alt="logo" width="35px" height="auto" /> </span>
+            <span class="logo-title-mobile">Typh<span class="gradient-color">oo</span>n</span>   
+            </div>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="#working" onclick="closeNav()">How It Works</a>
+                <a href="#offerings" onclick="closeNav()">What We Offer</a>
+                <a href="#tokenomics" onclick="closeNav()">Tokenomics</a>
+                <a href="#roadmap" onclick="closeNav()">Roadmap</a>
+                <div class="nav-button"><button class="btn-l-r btn uppercase" onclick="closeNav()">Connect Wallet</button></div>
+              </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+    </div>
+    <!-- hero -->
+    <section class="container relative overflow-hidden">
+        <div class="bubbles">
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.0588 1.95298L13.7821 3.21624C14.7598 3.98659 15.5799 4.96363 16.151 6.11177C18.1259 10.0824 16.373 14.5952 12.2357 16.1916C9.18363 17.3693 5.19201 17.3226 0.260683 16.0516L3.53733 14.7884C2.55977 14.018 1.73954 13.041 1.1685 11.8928C-0.806417 7.92221 0.922039 3.41878 5.08385 1.81293C8.13585 0.635298 12.1275 0.681985 17.0588 1.95298ZM10.0113 5.52272C7.8494 4.68296 5.49168 5.56005 4.74522 7.48178C3.99877 9.40346 5.14623 11.6421 7.30816 12.4819C9.47011 13.3217 11.8278 12.4445 12.5743 10.5228C13.3207 8.60112 12.1733 6.3625 10.0113 5.52272Z" fill="url(#paint0_linear_12_234)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_12_234" x1="3.70397" y1="-3.23447" x2="19.4802" y2="16.7529" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#007D5C"/>
+                        <stop offset="1" stop-color="#00CE98"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="bubble"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="45" viewBox="0 0 48 45" fill="none">
+                <g opacity="0.2" filter="url(#filter0_f_12_239)">
+                  <path d="M43.1548 6.34593L35.6489 9.23973C37.8883 11.0044 39.7671 13.2425 41.0753 15.8726C45.5993 24.9681 41.5838 35.3059 32.1063 38.9629C25.1149 41.6606 15.9712 41.5535 4.67488 38.6421L12.1808 35.7484C9.94147 33.9837 8.06254 31.7455 6.75445 29.1154C2.23045 20.0198 6.18987 9.70368 15.7235 6.02511C22.7148 3.32748 31.8585 3.43443 43.1548 6.34593ZM27.011 14.5233C22.0586 12.5996 16.6577 14.6088 14.9477 19.0109C13.2378 23.413 15.8663 28.5411 20.8188 30.4648C25.7712 32.3885 31.1721 30.3792 32.882 25.9772C34.5919 21.575 31.9634 16.4469 27.011 14.5233Z" fill="url(#paint0_linear_12_239)"/>
+                </g>
+                <defs>
+                  <filter id="filter0_f_12_239" x="0.674927" y="0.0789795" width="46.4799" height="44.8301" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_12_239"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_12_239" x1="12.5625" y1="-5.53712" x2="48.7015" y2="40.2485" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#007D5C"/>
+                    <stop offset="1" stop-color="#00CE98"/>
+                  </linearGradient>
+                </defs>
+              </svg></div>
+          </div>
+      <div class="hero-wrapper z-1">
+        <div class="hero-inner-wrapper z-1"
+        data-aos="zoom-in"  
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        >
+          <h1 class="hero-title-animation Montserrat-bold">
+            <span class="gradient-color">$TYPHOON</span> <br />
+            The Privacy Storm on Ethereum
+          </h1>
+          <p class="hero-descrption hero-subtitle-animation">
+            $TYPHOON is a project designed to revolutionize privacy on the
+            Ethereum blockchain. Just like its namesake, $TYPHOON will unleash a
+            storm of privacy, ensuring that your Ethereum transactions remain
+            confidential and untraceable.
+          </p>
+         <a class="hero-button-rounded z-1"  
+         href="https://t.me/typhoonERC20" target="_blank"
+         >
+            <span class="gradient-color z-1">Let’s Get Started</span>
+        </a>
+        <div class="hero-img-wrapper mx-auto"
+        data-aos="zoom-out"  
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        >
+          <img
+            src="./images//hero-image1.png"
+            alt="hero-image"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- working -->
+    <section id="working" class="container overflow-hidden">
+      <div class="working-wrapper">
+        <div>
+          <h2>How It Works</h2>
+          <p class="working-description">
+            <span class="gradient-color">$TYPHOON</span>
+            leverages cutting-edge zk-SNARKs technology to obfuscate transaction
+            details, making it virtually impossible to trace the origin and
+            destination of your funds. Here's how it works:
+          </p>
+        </div>
+        <div class="working-card-wrapper">
+          <!-- card 1 -->
+          <div class="working-card-width"
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <div>
+              <div class="working-card-svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <path
+                    d="M29.333 24.75C30.1275 24.75 30.7844 24.4903 31.3038 23.9709C31.8233 23.4514 32.083 22.7945 32.083 22C32.083 21.2056 31.8233 20.5487 31.3038 20.0292C30.7844 19.5098 30.1275 19.25 29.333 19.25C28.5386 19.25 27.8816 19.5098 27.3622 20.0292C26.8427 20.5487 26.583 21.2056 26.583 22C26.583 22.7945 26.8427 23.4514 27.3622 23.9709C27.8816 24.4903 28.5386 24.75 29.333 24.75ZM9.16634 31.1667V34.8334V9.16671V31.1667ZM10.2945 36.6667C9.45074 36.6667 8.7462 36.3841 8.18092 35.8188C7.61565 35.2535 7.33301 34.549 7.33301 33.7052V10.2949C7.33301 9.4511 7.61565 8.74657 8.18092 8.18129C8.7462 7.61601 9.45074 7.33337 10.2945 7.33337H33.7048C34.5486 7.33337 35.2531 7.61601 35.8184 8.18129C36.3837 8.74657 36.6663 9.4511 36.6663 10.2949V15.6891H34.833V10.2949C34.833 9.96584 34.7272 9.69555 34.5157 9.48401C34.3042 9.27247 34.0339 9.16671 33.7048 9.16671H10.2945C9.96548 9.16671 9.69518 9.27247 9.48365 9.48401C9.27211 9.69555 9.16634 9.96584 9.16634 10.2949V33.7052C9.16634 34.0342 9.27211 34.3045 9.48365 34.5161C9.69518 34.7276 9.96548 34.8334 10.2945 34.8334H33.7048C34.0339 34.8334 34.3042 34.7276 34.5157 34.5161C34.7272 34.3045 34.833 34.0342 34.833 33.7052V28.311H36.6663V33.7052C36.6663 34.549 36.3837 35.2535 35.8184 35.8188C35.2531 36.3841 34.5486 36.6667 33.7048 36.6667H10.2945ZM24.9612 29.3334C24.1174 29.3334 23.4129 29.0507 22.8476 28.4855C22.2823 27.9202 21.9997 27.2156 21.9997 26.3719V17.6282C21.9997 16.7844 22.2823 16.0799 22.8476 15.5146C23.4129 14.9493 24.1174 14.6667 24.9612 14.6667H35.5382C36.3819 14.6667 37.0865 14.9493 37.6518 15.5146C38.217 16.0799 38.4997 16.7844 38.4997 17.6282V26.3719C38.4997 27.2156 38.217 27.9202 37.6518 28.4855C37.0865 29.0507 36.3819 29.3334 35.5382 29.3334H24.9612Z"
+                    fill="url(#paint0_linear_12_261)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_261"
+                      x1="6.13149"
+                      y1="7.33337"
+                      x2="42.3784"
+                      y2="33.2831"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h5>Depositing Funds</h5>
+            <p class="working-card-description">
+              Users initiate the privacy process by depositing their Ethereum
+              into the $TYPHOON smart contract. These deposits are completely
+              anonymous and do not link to any user identity.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div class="working-card-width"
+          data-aos="fade-down"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <div>
+              <div class="working-card-svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <path
+                    d="M22.0001 36.4833C24.964 35.5666 27.439 33.7562 29.4251 31.052C31.4112 28.3479 32.5723 25.3305 32.9084 22H22.0001V7.59771L11.7405 11.4054C11.5054 11.4994 11.3233 11.6405 11.194 11.8285C11.0647 12.0165 11.0001 12.2281 11.0001 12.4631V21.1397C11.0001 21.3771 11.0306 21.6639 11.0917 22H22.0001V36.4833ZM22.0001 38.2109C21.8332 38.2109 21.6581 38.1956 21.4747 38.1651C21.2914 38.1345 21.1198 38.0887 20.96 38.0276C17.3521 36.6526 14.4846 34.3203 12.3574 31.0309C10.2303 27.7415 9.16675 24.1812 9.16675 20.35V12.4984C9.16675 11.8755 9.34713 11.3114 9.7079 10.806C10.0687 10.3007 10.53 9.93405 11.0917 9.70604L20.9636 6.03938C21.3208 5.9101 21.6663 5.84546 22.0001 5.84546C22.3338 5.84546 22.6793 5.9101 23.0366 6.03938L32.9084 9.70604C33.4702 9.93405 33.9315 10.3007 34.2923 10.806C34.653 11.3114 34.8334 11.8755 34.8334 12.4984V20.35C34.8334 24.1812 33.7699 27.7415 31.6427 31.0309C29.5156 34.3203 26.648 36.6526 23.0401 38.0276C22.8803 38.0887 22.7088 38.1345 22.5254 38.1651C22.3421 38.1956 22.167 38.2109 22.0001 38.2109Z"
+                    fill="url(#paint0_linear_12_280)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_280"
+                      x1="8.17726"
+                      y1="5.84546"
+                      x2="43.299"
+                      y2="24.6125"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h5>Privacy Pool</h5>
+            <p class="working-card-description">
+              Deposited funds are combined with those of other users in a secure
+              and decentralized privacy pool. This pooling of assets ensures
+              that the source of funds is concealed, enhancing privacy.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="working-card-width"
+          data-aos="fade-left"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <div>
+              <div class="working-card-svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2948 36.6667C9.45098 36.6667 8.74645 36.3841 8.18117 35.8188C7.61589 35.2535 7.33325 34.549 7.33325 33.7052V28.9103C7.33325 28.6494 7.42081 28.4314 7.59592 28.2563C7.77101 28.0812 7.989 27.9936 8.24992 27.9936C8.5108 27.9936 8.7288 28.0812 8.90391 28.2563C9.07903 28.4314 9.16659 28.6494 9.16659 28.9103V33.7052C9.16659 33.9872 9.2841 34.2458 9.51914 34.4808C9.7542 34.7159 10.0127 34.8334 10.2948 34.8334H33.7051C33.9871 34.8334 34.2456 34.7159 34.4807 34.4808C34.7157 34.2458 34.8333 33.9872 34.8333 33.7052V10.2949C34.8333 10.0129 34.7157 9.75432 34.4807 9.51926C34.2456 9.28422 33.9871 9.16671 33.7051 9.16671H10.2948C10.0127 9.16671 9.7542 9.28422 9.51914 9.51926C9.2841 9.75432 9.16659 10.0129 9.16659 10.2949V15.0898C9.16659 15.3507 9.07903 15.5687 8.90391 15.7438C8.7288 15.9189 8.5108 16.0065 8.24992 16.0065C7.989 16.0065 7.77101 15.9189 7.59592 15.7438C7.42081 15.5687 7.33325 15.3507 7.33325 15.0898V10.2949C7.33325 9.4511 7.61589 8.74657 8.18117 8.18129C8.74645 7.61601 9.45098 7.33337 10.2948 7.33337H33.7051C34.5489 7.33337 35.2534 7.61601 35.8187 8.18129C36.3839 8.74657 36.6666 9.4511 36.6666 10.2949V33.7052C36.6666 34.549 36.3839 35.2535 35.8187 35.8188C35.2534 36.3841 34.5489 36.6667 33.7051 36.6667H10.2948ZM23.5441 22.9167H8.24992C7.989 22.9167 7.77101 22.8292 7.59592 22.654C7.42081 22.479 7.33325 22.261 7.33325 22C7.33325 21.7391 7.42081 21.5211 7.59592 21.346C7.77101 21.1709 7.989 21.0834 8.24992 21.0834H23.5441L19.2358 16.775C19.0572 16.5964 18.9638 16.3861 18.9555 16.144C18.9473 15.9019 19.0407 15.6797 19.2358 15.4776C19.438 15.2755 19.656 15.1726 19.8898 15.1691C20.1237 15.1656 20.3417 15.2649 20.5438 15.467L26.0403 20.9635C26.2001 21.1233 26.3124 21.2867 26.377 21.4536C26.4417 21.6204 26.474 21.8026 26.474 22C26.474 22.1975 26.4417 22.3796 26.377 22.5465C26.3124 22.7134 26.2001 22.8768 26.0403 23.0366L20.5438 28.5331C20.3652 28.7117 20.1531 28.8051 19.9074 28.8133C19.6618 28.8216 19.438 28.7246 19.2358 28.5225C19.0407 28.3203 18.9414 28.1041 18.9379 27.8738C18.9344 27.6434 19.0337 27.4272 19.2358 27.225L23.5441 22.9167Z"
+                    fill="url(#paint0_linear_12_270)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_270"
+                      x1="6.20241"
+                      y1="7.33337"
+                      x2="41.6903"
+                      y2="31.2452"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h5>Withdrawal</h5>
+            <p class="working-card-description">
+              When users wish to withdraw their funds, $TYPHOON provides an
+              equivalent amount of Ethereum, further safeguarding privacy. These
+              withdrawals are structured to break any association between the
+              deposited and withdrawn funds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video -->
+    <section class="container overflow-hidden">
+      <div class="video-wrapper"
+      data-aos="zoom-in"  
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      >
+        <video width="100%" height="70%" controls style="border-radius: 20px">
+          <source src="./images/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- Offerings -->
+    <section id="offerings" class="container overflow-hidden">
+      <div class="offerings-wrapper">
+        <div>
+          <h2>What We offers?</h2>
+        </div>
+        <div class="offerings-card-wrapper">
+          <!-- card 1 -->
+          <div class="offerings-card">
+            <div>
+              <div class="offering-svg-wrapper"
+              data-aos="fade-down"  
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <path
+                    d="M22.0004 26.0333C20.6254 26.0333 19.4567 25.552 18.4942 24.5895C17.5317 23.627 17.0504 22.4583 17.0504 21.0833C17.0504 19.7083 17.5317 18.5395 18.4942 17.577C19.4567 16.6145 20.6254 16.1333 22.0004 16.1333C23.3754 16.1333 24.5442 16.6145 25.5067 17.577C26.4692 18.5395 26.9504 19.7083 26.9504 21.0833C26.9504 22.4583 26.4692 23.627 25.5067 24.5895C24.5442 25.552 23.3754 26.0333 22.0004 26.0333ZM22.008 33C18.3551 33 14.9427 32.0469 11.7708 30.1407C8.5989 28.2345 6.17505 25.6601 4.49926 22.4176C4.38165 22.205 4.29817 21.9923 4.24883 21.7796C4.19948 21.5669 4.1748 21.3348 4.1748 21.0833C4.1748 20.8318 4.19948 20.5997 4.24883 20.387C4.29817 20.1743 4.38165 19.9616 4.49926 19.749C6.17505 16.5065 8.59881 13.9321 11.7705 12.0259C14.9423 10.1197 18.3523 9.16663 22.0004 9.16663C25.7917 9.16663 29.2674 10.1573 32.4275 12.1387C35.5877 14.1201 38.0304 16.7961 39.7556 20.1666H37.6296C36.0407 17.325 33.856 15.0868 31.0754 13.452C28.2949 11.8173 25.2699 11 22.0004 11C18.5477 11 15.3775 11.909 12.49 13.727C9.60253 15.5451 7.39489 17.9972 5.86711 21.0833C7.39489 24.1694 9.60253 26.6215 12.49 28.4395C15.3775 30.2576 18.5477 31.1666 22.0004 31.1666C22.541 31.1666 23.0855 31.142 23.634 31.0926C24.1824 31.0432 24.7309 30.9692 25.2793 30.8705V32.7144C24.7341 32.796 24.1889 32.864 23.6437 32.9184C23.0985 32.9728 22.5532 33 22.008 33ZM22.0004 27.782C22.6398 27.782 23.2574 27.6939 23.8532 27.5176C24.449 27.3413 24.9984 27.0922 25.5014 26.7702C25.7247 25.7595 26.1002 24.8428 26.6279 24.0202C27.1555 23.1975 27.8225 22.49 28.6287 21.8977C28.6522 21.7661 28.6698 21.6303 28.6815 21.4905C28.6933 21.3507 28.6992 21.2149 28.6992 21.0833C28.6992 19.2225 28.0471 17.6409 26.743 16.3384C25.4388 15.0358 23.8552 14.3846 21.9921 14.3846C20.1291 14.3846 18.5482 15.0366 17.2496 16.3408C15.951 17.6449 15.3017 19.2285 15.3017 21.0916C15.3017 22.9547 15.953 24.5355 17.2555 25.8341C18.558 27.1327 20.1397 27.782 22.0004 27.782ZM30.4267 36.7019C30.0072 36.7019 29.6555 36.56 29.3717 36.2762C29.0879 35.9924 28.946 35.6407 28.946 35.2211V30.25C28.946 29.8245 29.1099 29.4773 29.4378 29.2081C29.7657 28.939 30.1541 28.8045 30.603 28.8045V26.9711C30.603 26.1082 30.9107 25.3695 31.5261 24.755C32.1415 24.1405 32.8813 23.8333 33.7455 23.8333C34.6097 23.8333 35.3421 24.1405 35.9426 24.755C36.5431 25.3695 36.8434 26.1082 36.8434 26.9711V28.8045C37.2923 28.8045 37.6807 28.939 38.0086 29.2081C38.3365 29.4773 38.5004 29.8245 38.5004 30.25V35.2211C38.5004 35.6407 38.3585 35.9924 38.0747 36.2762C37.7909 36.56 37.4392 36.7019 37.0197 36.7019H30.4267ZM32.0133 28.8045H35.4331V26.9711C35.4331 26.4517 35.281 26.0339 34.9766 25.7177C34.6722 25.4016 34.2603 25.2435 33.7408 25.2435C33.2214 25.2435 32.8036 25.4016 32.4875 25.7177C32.1713 26.0339 32.0133 26.4517 32.0133 26.9711V28.8045Z"
+                    fill="url(#paint0_linear_12_296)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_296"
+                      x1="2.80312"
+                      y1="9.16663"
+                      x2="38.4041"
+                      y2="40.1637"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h3 
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >Complete Anonymity</h3>
+            <p
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            class="offering-card-description">
+              $TYPHOON ensures your Ethereum transactions are completely
+              anonymous, protecting your financial privacy.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div class="offerings-card">
+            <div>
+              <div class="offering-svg-wrapper"
+              data-aos="fade-down"  
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <path
+                    d="M22.0001 38.8314C21.7415 38.8314 21.4947 38.805 21.2597 38.7521C21.0247 38.6992 20.7931 38.6081 20.5651 38.4789L7.94336 31.4804C7.48033 31.2149 7.11013 30.8582 6.83278 30.4104C6.55542 29.9627 6.41675 29.4614 6.41675 28.9067V15.0933C6.41675 14.5386 6.55542 14.0373 6.83278 13.5896C7.11013 13.1418 7.48033 12.7851 7.94336 12.5196L20.5651 5.52113C20.7931 5.39188 21.0247 5.30081 21.2597 5.24792C21.4947 5.19503 21.7415 5.16858 22.0001 5.16858C22.2586 5.16858 22.5054 5.19503 22.7405 5.24792C22.9755 5.30081 23.207 5.39188 23.435 5.52113L36.0568 12.5196C36.5198 12.7851 36.89 13.1418 37.1674 13.5896C37.4447 14.0373 37.5834 14.5386 37.5834 15.0933V28.9067C37.5834 29.4614 37.4447 29.9627 37.1674 30.4104C36.89 30.8582 36.5198 31.2149 36.0568 31.4804L23.435 38.4789C23.207 38.6081 22.9755 38.6992 22.7405 38.7521C22.5054 38.805 22.2586 38.8314 22.0001 38.8314ZM16.8597 18.0865C17.5554 17.2427 18.3481 16.6146 19.2378 16.2021C20.1274 15.7896 21.0482 15.5833 22.0001 15.5833C22.9755 15.5833 23.9022 15.7896 24.7801 16.2021C25.6579 16.6146 26.4448 17.2427 27.1405 18.0865L34.6853 13.8875L22.5642 7.14294C22.3762 7.04892 22.1881 7.00191 22.0001 7.00191C21.812 7.00191 21.624 7.04892 21.436 7.14294L9.31484 13.8875L16.8597 18.0865ZM21.0834 36.6596V28.399C19.4945 28.1123 18.1806 27.3784 17.1417 26.1973C16.1029 25.0162 15.5834 23.6171 15.5834 22C15.5834 21.5934 15.6163 21.2138 15.6821 20.8612C15.748 20.5086 15.8502 20.1361 15.9889 19.7436L8.25008 15.4071V28.8715C8.25008 29.083 8.29709 29.271 8.39111 29.4356C8.48513 29.6001 8.62616 29.7411 8.8142 29.8586L21.0834 36.6596ZM22.0001 26.5833C23.2669 26.5833 24.3476 26.1362 25.2419 25.2418C26.1362 24.3475 26.5834 23.2669 26.5834 22C26.5834 20.7331 26.1362 19.6525 25.2419 18.7582C24.3476 17.8638 23.2669 17.4167 22.0001 17.4167C20.7332 17.4167 19.6526 17.8638 18.7582 18.7582C17.8639 19.6525 17.4167 20.7331 17.4167 22C17.4167 23.2669 17.8639 24.3475 18.7582 25.2418C19.6526 26.1362 20.7332 26.5833 22.0001 26.5833ZM22.9167 36.6596L35.186 29.8586C35.374 29.7411 35.515 29.6001 35.609 29.4356C35.7031 29.271 35.7501 29.083 35.7501 28.8715V15.4071L28.0113 19.7436C28.15 20.1667 28.2522 20.5468 28.318 20.8841C28.3838 21.2214 28.4167 21.5934 28.4167 22C28.4167 23.6171 27.8973 25.0162 26.8584 26.1973C25.8195 27.3784 24.5056 28.1123 22.9167 28.399V36.6596Z"
+                    fill="url(#paint0_linear_12_303)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_303"
+                      x1="5.21523"
+                      y1="5.16858"
+                      x2="44.6809"
+                      y2="29.7888"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h3
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+            Decentralization
+            </h3>
+            <p 
+            class="offering-card-description"
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+              Our platform operates without centralized control, ensuring
+              trustless and censorship-resistant privacy.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="offerings-card">
+            <div>
+              <div 
+              class="offering-svg-wrapper"
+              data-aos="fade-down"  
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <path
+                    d="M6.875 34.8333C6.49306 34.8333 6.1684 34.699 5.90104 34.4305C5.63368 34.1619 5.5 33.8358 5.5 33.4521C5.5 33.0684 5.63368 32.7444 5.90104 32.48C6.1684 32.2155 6.49306 32.0833 6.875 32.0833H9.16667V12.1282C9.16667 11.3137 9.45665 10.6166 10.0366 10.0366C10.6166 9.45664 11.3138 9.16666 12.1282 9.16666H35.75C36.0097 9.16666 36.2274 9.25463 36.4031 9.43056C36.5788 9.60647 36.6667 9.82447 36.6667 10.0846C36.6667 10.3446 36.5788 10.5622 36.4031 10.7373C36.2274 10.9124 36.0097 11 35.75 11H12.1282C11.7991 11 11.5288 11.1058 11.3173 11.3173C11.1058 11.5288 11 11.7991 11 12.1282V32.0833H19.6731C20.055 32.0833 20.3797 32.2176 20.647 32.4862C20.9144 32.7547 21.0481 33.0809 21.0481 33.4646C21.0481 33.8482 20.9144 34.1723 20.647 34.4367C20.3797 34.7011 20.055 34.8333 19.6731 34.8333H6.875ZM27.6058 34.8333C27.1862 34.8333 26.8345 34.6914 26.5507 34.4076C26.2669 34.1238 26.125 33.7721 26.125 33.3526V16.8525C26.125 16.433 26.2669 16.0813 26.5507 15.7975C26.8345 15.5137 27.1862 15.3718 27.6058 15.3718H37.0545C37.4741 15.3718 37.8257 15.5137 38.1095 15.7975C38.3933 16.0813 38.5352 16.433 38.5352 16.8525V33.3526C38.5352 33.7721 38.3933 34.1238 38.1095 34.4076C37.8257 34.6914 37.4741 34.8333 37.0545 34.8333H27.6058ZM27.9583 32.0833H36.7019V17.2051H27.9583V32.0833Z"
+                    fill="url(#paint0_linear_12_310)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_310"
+                      x1="4.22644"
+                      y1="9.16666"
+                      x2="37.3932"
+                      y2="37.9302"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h3
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+            User-Friendly Interface
+            </h3>
+            <p 
+            class="offering-card-description"
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+              $TYPHOON offers a seamless and user-friendly experience, making
+              privacy accessible to all.
+            </p>
+          </div>
+          <!-- card 4 -->
+          <div class="offerings-card">
+            <div>
+              <div 
+              class="offering-svg-wrapper"
+              data-aos="fade-down"  
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  viewBox="0 0 45 45"
+                  fill="none"
+                >
+                  <path
+                    d="M22.5 29.4844C24.4375 29.4844 26.0781 28.8125 27.4219 27.4688C28.7656 26.125 29.4375 24.4844 29.4375 22.5469C29.4375 20.6094 28.7656 18.9688 27.4219 17.625C26.0781 16.2812 24.4375 15.6094 22.5 15.6094C20.5625 15.6094 18.9219 16.2812 17.5781 17.625C16.2344 18.9688 15.5625 20.6094 15.5625 22.5469C15.5625 24.4844 16.2344 26.125 17.5781 27.4688C18.9219 28.8125 20.5625 29.4844 22.5 29.4844ZM23.1563 22.2854L26.0625 25.1719C26.1875 25.2969 26.2578 25.4453 26.2734 25.6172C26.2891 25.7891 26.2188 25.9531 26.0625 26.1094C25.9063 26.2656 25.75 26.3438 25.5938 26.3438C25.4375 26.3438 25.2813 26.2656 25.125 26.1094L22.2656 23.25C22.1094 23.0938 22 22.9341 21.9375 22.7711C21.875 22.608 21.8438 22.4395 21.8438 22.2656V17.8594C21.8438 17.6844 21.9094 17.5313 22.0406 17.4C22.1719 17.2688 22.325 17.2031 22.5 17.2031C22.675 17.2031 22.8281 17.2688 22.9594 17.4C23.0906 17.5313 23.1563 17.6844 23.1563 17.8594V22.2854ZM22.5 38.4844C22.3438 38.4844 22.1719 38.4688 21.9844 38.4375C21.7969 38.4062 21.6247 38.3594 21.4678 38.2969C17.9372 36.8906 15.1328 34.5703 13.0547 31.3359C10.9766 28.1016 9.9375 24.5938 9.9375 20.8125V13.0312C9.9375 12.4295 10.1074 11.8879 10.4473 11.4065C10.7871 10.925 11.2266 10.576 11.7656 10.3594L21.5156 6.75C21.8594 6.625 22.1875 6.5625 22.5 6.5625C22.8125 6.5625 23.1406 6.625 23.4844 6.75L33.2344 10.3594C33.7734 10.576 34.2129 10.925 34.5527 11.4065C34.8926 11.8879 35.0625 12.4295 35.0625 13.0312V20.8125C35.0625 24.5938 34.0234 28.1016 31.9453 31.3359C29.8672 34.5703 27.0628 36.8906 23.5322 38.2969C23.3753 38.3594 23.2031 38.4062 23.0156 38.4375C22.8281 38.4688 22.6563 38.4844 22.5 38.4844ZM22.5 37.3125C25.75 36.2812 28.4375 34.2188 30.5625 31.125C32.6875 28.0312 33.75 24.5938 33.75 20.8125V12.9844C33.75 12.6719 33.6641 12.3906 33.4922 12.1406C33.3203 11.8906 33.0781 11.7031 32.7656 11.5781L23.0156 7.96875C22.8594 7.90625 22.6875 7.875 22.5 7.875C22.3125 7.875 22.1406 7.90625 21.9844 7.96875L12.2344 11.5781C11.9219 11.7031 11.6797 11.8906 11.5078 12.1406C11.3359 12.3906 11.25 12.6719 11.25 12.9844V20.8125C11.25 24.5938 12.3125 28.0312 14.4375 31.125C16.5625 34.2188 19.25 36.2812 22.5 37.3125Z"
+                    fill="url(#paint0_linear_12_289)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_289"
+                      x1="8.9689"
+                      y1="6.5625"
+                      x2="43.4639"
+                      y2="24.8564"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h3
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+            Security
+            </h3>
+            <p 
+            class="offering-card-description"
+            data-aos="fade-up"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+              Our smart contracts and privacy mechanisms are rigorously audited
+              and constantly monitored to ensure the highest level of security.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tokenomics -->
+    <section id="tokenomics" class="container overflow-hidden">
+      <div>
+        <h2>Tokenomics</h2>
+        <div class="tokenomics-wrapper">
+          <div class="tokenomics-bg">
+            <div class="tokenomics-image">
+              <img
+                src="./images/tokenomics.png"
+                alt="progress"
+                class="custom-image-width"
+                data-aos="zoom-out"  
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="total-supply">
+              <p
+              data-aos="fade-down"  
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              >
+              TOTAL SUPPLY
+              </p>
+              <p
+              data-aos="fade-up"  
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              >
+                1,000,000
+              </p>
+            </div>
+          </div>
+          <div 
+          class="tokenomics-percent tokenomics-bg"
+          data-aos="zoom-in"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <p><span>2%</span> Max transaction</p>
+            <p><span>3%</span> Tax</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Roadmap -->
+    <section id="roadmap" class="container overflow-hidden">
+      <div class="roadmap-wrapper">
+        <h2>Roadmap</h2>
+        <div class="roadmap-card-wrapper">
+          <!-- card 1 -->
+          <div class="roadmap-card"
+          data-aos="fade-up"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <p
+            data-aos="zoom-in"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+
+            >Phase 01</p>
+            <h3
+            >2023-24</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div class="laptop-view"
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+            >
+              <path
+                d="M22.125 12.2916L39.3333 29.5L22.125 46.7083"
+                stroke="white"
+                stroke-width="2.62984"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="mobile-view"
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 59 59"
+              fill="none"
+              transform="rotate(90)"
+            >
+              <path
+                d="M22.125 12.2916L39.3333 29.5L22.125 46.7083"
+                stroke="white"
+                stroke-width="2.62984"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <!-- card 2 -->
+          <div class="roadmap-card"
+          data-aos="fade-up"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <p
+            data-aos="zoom-in"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >Phase 02</p>
+            <h3>2023-24</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div class="laptop-view"
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+            >
+              <path
+                d="M22.125 12.2916L39.3333 29.5L22.125 46.7083"
+                stroke="white"
+                stroke-width="2.62984"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="mobile-view"
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 59 59"
+              fill="none"
+              transform="rotate(90)"
+            >
+              <path
+                d="M22.125 12.2916L39.3333 29.5L22.125 46.7083"
+                stroke="white"
+                stroke-width="2.62984"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <!-- card 3 -->
+          <div class="roadmap-card"
+          data-aos="fade-up"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <p
+            data-aos="zoom-in"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >Phase 04</p>
+            <h3>2023-24</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Join  -->
+    <section class="join-container overflow-hidden">
+      <div class="join-wrapper"
+      data-aos="zoom-out"  
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      >
+        <div class="join-info">
+          <h2>Join the Privacy Storm:</h2>
+          <div class="join-description">
+            <p>
+              Become a part of the $TYPHOON community and experience unmatched
+              privacy on the Ethereum blockchain.Say goodbye to prying eyes and hello to financial freedom.
+            <p>
+              Join us as we redefine privacy in the world of cryptocurrencies.
+              Together, we'll create a storm of privacy that will protect your
+              Ethereum transactions from all angles.
+            </p>
+          </div>
+          <div class="join-info-disclaimer-wrapper">
+            <a href="https://t.me/typhoonERC20" target="_blank" class="join-btn cursor-pointer">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_12_328)">
+                    <path
+                      d="M35.7599 7.57408L29.7808 9.87922C31.5647 11.2849 33.0613 13.0678 34.1034 15.1628C37.7071 22.4082 34.5084 30.6431 26.9589 33.5561C21.3897 35.7051 14.106 35.6198 5.10755 33.3006L11.0866 30.9955C9.3028 29.5898 7.80609 27.8069 6.76409 25.7118C3.16035 18.4664 6.31435 10.2488 13.9086 7.31852C19.4778 5.16964 26.7615 5.25483 35.7599 7.57408ZM22.9 14.088C18.955 12.5556 14.6528 14.1561 13.2907 17.6627C11.9286 21.1693 14.0224 25.2543 17.9674 26.7867C21.9125 28.3191 26.2147 26.7185 27.5768 23.2119C28.9389 19.7053 26.8451 15.6203 22.9 14.088Z"
+                      fill="url(#paint0_linear_12_328)"
+                    />
+                    <path
+                      d="M29.6807 20.337C29.6807 25.5109 25.4864 29.7052 20.3125 29.7052C15.1385 29.7052 10.9442 25.5109 10.9442 20.337C10.9442 15.1631 15.1385 10.9688 20.3125 10.9688C25.4864 10.9688 29.6807 15.1631 29.6807 20.337ZM16.0206 20.337C16.0206 22.7073 17.9421 24.6289 20.3125 24.6289C22.6828 24.6289 24.6043 22.7073 24.6043 20.337C24.6043 17.9667 22.6828 16.0451 20.3125 16.0451C17.9421 16.0451 16.0206 17.9667 16.0206 20.337Z"
+                      fill="#232323"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_328"
+                      x1="11.3907"
+                      y1="-1.89172"
+                      x2="40.1783"
+                      y2="34.5802"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                    <clipPath id="clip0_12_328">
+                      <rect width="40.8693" height="40.8693" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <span>JOIN NOW</span>
+            </a>
+            <div class="join-info-disclaimer-text">
+              <p>Disclaimer:</p>
+              <p>
+                While $TYPHOON is committed to providing enhanced privacy, we
+                prioritize legal compliance. In the event of a valid
+                court-issued mandate, $TYPHOON will cooperate with law
+                enforcement agencies. We value the importance of a secure and
+                lawful ecosystem for all users.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+        data-aos="zoom-in"  
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="236"
+            height="236"
+            viewBox="0 0 236 236"
+            fill="none"
+            class="info-logo"
+          >
+            <g clip-path="url(#clip0_12_321)">
+              <path
+                d="M206.497 43.7366L171.97 57.0477C182.271 65.1649 190.913 75.46 196.931 87.558C217.741 129.396 199.27 176.949 155.675 193.77C123.516 206.179 81.4556 205.687 29.494 192.295L64.0202 178.984C53.7196 170.866 45.0768 160.571 39.0597 148.473C18.2499 106.635 36.4627 59.1818 80.3159 42.2609C112.475 29.8522 154.535 30.3441 206.497 43.7366ZM132.237 81.3512C109.457 72.5025 84.6132 81.7445 76.7477 101.994C68.8824 122.243 80.9732 145.832 103.754 154.68C126.534 163.529 151.378 154.286 159.243 134.038C167.108 113.788 155.018 90.1999 132.237 81.3512Z"
+                fill="url(#paint0_linear_12_321)"
+              />
+              <path
+                d="M171.391 117.436C171.391 147.313 147.171 171.533 117.294 171.533C87.4171 171.533 63.197 147.313 63.197 117.436C63.197 87.5592 87.4171 63.3391 117.294 63.3391C147.171 63.3391 171.391 87.5592 171.391 117.436ZM92.5107 117.436C92.5107 131.124 103.607 142.22 117.294 142.22C130.982 142.22 142.077 131.124 142.077 117.436C142.077 103.749 130.982 92.6528 117.294 92.6528C103.607 92.6528 92.5107 103.749 92.5107 117.436Z"
+                fill="#1D1D1D"
+              />
+            </g>
+            <defs>
+              <linearGradient
+                id="paint0_linear_12_321"
+                x1="65.7761"
+                y1="-10.9238"
+                x2="232.011"
+                y2="199.684"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#007D5C" />
+                <stop offset="1" stop-color="#00CE98" />
+              </linearGradient>
+              <clipPath id="clip0_12_321">
+                <rect width="236" height="236" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-container overflow-hidden">
+      <div class="footer-wrapper">
+        <div class="footer-inner-wrapper">
+          <div class="footer-info"
+          data-aos="fade-right"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <div class="footer-logo"
+            data-aos="zoom-out"  
+            data-aos-easing="linear"
+            data-aos-duration="1000">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_12_346)">
+                    <path
+                      d="M35.7599 7.57408L29.7808 9.87922C31.5647 11.2849 33.0613 13.0678 34.1034 15.1628C37.7071 22.4082 34.5084 30.6431 26.9589 33.5561C21.3897 35.7051 14.106 35.6198 5.10755 33.3006L11.0866 30.9955C9.3028 29.5898 7.80609 27.8069 6.76409 25.7118C3.16035 18.4664 6.31435 10.2488 13.9086 7.31852C19.4778 5.16964 26.7615 5.25483 35.7599 7.57408ZM22.9 14.088C18.955 12.5556 14.6528 14.1561 13.2907 17.6627C11.9286 21.1693 14.0224 25.2543 17.9674 26.7867C21.9125 28.3191 26.2147 26.7185 27.5768 23.2119C28.9389 19.7053 26.8451 15.6203 22.9 14.088Z"
+                      fill="url(#paint0_linear_12_346)"
+                    />
+                    <path
+                      d="M29.6807 20.337C29.6807 25.5109 25.4864 29.7052 20.3125 29.7052C15.1385 29.7052 10.9442 25.5109 10.9442 20.337C10.9442 15.1631 15.1385 10.9688 20.3125 10.9688C25.4864 10.9688 29.6807 15.1631 29.6807 20.337ZM16.0206 20.337C16.0206 22.7073 17.9421 24.6289 20.3125 24.6289C22.6828 24.6289 24.6043 22.7073 24.6043 20.337C24.6043 17.9667 22.6828 16.0451 20.3125 16.0451C17.9421 16.0451 16.0206 17.9667 16.0206 20.337Z"
+                      fill="#232323"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_346"
+                      x1="11.3907"
+                      y1="-1.89172"
+                      x2="40.1783"
+                      y2="34.5802"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#007D5C" />
+                      <stop offset="1" stop-color="#00CE98" />
+                    </linearGradient>
+                    <clipPath id="clip0_12_346">
+                      <rect width="40.8693" height="40.8693" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <p>Typh<span class="gradient-color">oo</span>n</p>
+            </div>
+            <div class="footer-disclaimer-text">
+              <p>Disclaimer:</p>
+              <p>
+                While $TYPHOON is committed to providing enhanced privacy, we
+                prioritize legal compliance. In the event of a valid
+                court-issued mandate, $TYPHOON will cooperate with law
+                enforcement agencies. We value the importance of a secure and
+                lawful ecosystem for all users.
+              </p>
+            </div>
+          </div>
+          <div class="footer-links"
+          data-aos="fade-left"  
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          >
+            <p>Contact us:</p>
+            <a href="mailto:">Email@gmail.com </a>
+            <p>Follow us on:</p>
+            <div class="footer-icons"
+            data-aos="zoom-out"  
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
+            <a href="https://t.me/typhoonERC20" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M13.511 22.5167C18.4853 22.5167 22.5177 18.4843 22.5177 13.51C22.5177 8.53579 18.4853 4.50338 13.511 4.50338C8.53677 4.50338 4.50435 8.53579 4.50435 13.51C4.50435 18.4843 8.53677 22.5167 13.511 22.5167ZM13.511 24.7684C7.29321 24.7684 2.25269 19.7278 2.25269 13.51C2.25269 7.29223 7.29321 2.25171 13.511 2.25171C19.7288 2.25171 24.7694 7.29223 24.7694 13.51C24.7694 19.7278 19.7288 24.7684 13.511 24.7684ZM10.0098 14.8282L7.19746 13.9504C6.58961 13.7639 6.586 13.3457 7.33356 13.0452L18.2913 8.81255C18.9269 8.55237 19.2883 8.88109 19.0822 9.70068L17.2158 18.5062C17.0859 19.1326 16.7081 19.2817 16.1848 18.9926L13.3129 16.8676L11.9744 18.1594C11.8368 18.2921 11.7249 18.4062 11.5142 18.4348C11.3033 18.4633 11.1295 18.4009 11.0031 18.0513L10.0241 14.8192L10.0098 14.8282Z" fill="white"/>
+              </svg> 
+              </a>
+              <a href="https://twitter.com/typhoonerc20" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                class="cursor-pointer"
+              >
+                <path
+                  d="M9.75941 2.25195H1.87793L11.179 14.6535L2.38454 24.7704H5.36828L12.561 16.496L18.7668 24.7705H26.6483L16.956 11.8474L25.2973 2.25195H22.3136L15.574 10.0048L9.75941 2.25195ZM19.8927 22.5186L6.38163 4.5038H8.63348L22.1446 22.5186H19.8927Z"
+                  fill="white"
+                />
+              </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copywrite">
+        <p>© 2023 $typhoon. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+        <script>
+          const navbar = document.querySelector('.navbar-wrapper');
+let scrolled = false;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0 && !scrolled) {
+    navbar.classList.add('shrink');
+    scrolled = true;
+  } else if (window.scrollY === 0 && scrolled) {
+    navbar.classList.remove('shrink');
+    scrolled = false;
+  }
+});
+        </script>
+  </body>
+</html>
